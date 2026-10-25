@@ -3,6 +3,10 @@
 使い方:
     uv run python -m app.ask "LoRAとは何ですか？"
     uv run python -m app.ask            # 質問を省略すると、講座に固有の質問をする
+    2026-10-26 追記
+    実装,発展  uv run python -m app.ask --interactive #  会話履歴を保つ、トークン数の応答時間
+    AIE_MODEL=gemini-3.6-flash uv run python -m app.ask --interactive #  モデル変更
+    AIE_MODEL=gemini-3.8-flash uv run python -m app.ask --interactive # モデル変更
 
 ツールも会話履歴も持たない「素の」呼び出し。
 講座に固有のことを聞くと、「分からない」と答えるか、一般論でもっともらしく答える
