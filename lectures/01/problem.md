@@ -88,9 +88,13 @@ GitHub の自分の fork で、`lec01` → `main` の PR を作成します。**
 モデルの切り替え例：
 
 ```bash
-AIE_MODEL=gemini-3.5-flash uv run python -m app.ask "LoRAとは何ですか？"
-```
+AIE_MODEL=gemini-3.5-flash-light uv run python -m app.ask "LoRAとは何ですか？"
 
+実装,発展　
+uv run python -m app.ask --interactive
+AIE_MODEL=gemini-3.6-flash uv run python -m app.ask --interactive
+AIE_MODEL=gemini-3.8-flash uv run python -m app.ask --interactive
+```
 ### 呼び出すモデルについての補足
 モデルの仕様は更新されることがあります。  
 gemini 3.5 flashにおいては、Gemini APIのドキュメントが更新され、非推奨となりgemini 3.6 flashへ転送されるようになりました。
